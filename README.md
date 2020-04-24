@@ -2,53 +2,30 @@
 
 Create a beautiful 3D image using image and depth map.
 
-## Get Ready
+## General
 
-Before starting don't forget to install.
-
-```bash
-npm i
-```
+This project is basically intended for non devs. 
+This project is depend upon Pixi.js and uses Pixi.js cdn.
+The benifit of using the cdn is that you don't need to install anything and can send the file `index.html` as is.
+The only file that you need to send/deal with is `index.html`.
 
 ## Usage
 
-Under the assets folder you will find 3 images.
+Under `index.html` search for `sources`.
 
-```txt
-    image.jpg
-    image-map.jpg
-    image-overlay.png
-
-```
-
-All you need to do is replace thoese images with different one.
-Off course the naming should remain the same (with the extensions).
-
-if you would like to change the name or the extensions.
-you should replace the naming reference in:
-
-For the overlay go the the root folder and search under index.html file:
-
-
-```html
- <img src="src/assets/image-overlay.png" alt="overlay">
-```
-replace `image-overlay.png` with the overlay image name.
-
-
-For the image and the depth map, go to `.src/scripts/index.js`
-
+you will se a structure of: 
 ```js
-.......
+    var sources = {
+        img: "https://...",
+        depthMap: "https:...",
+        overlay: "https://...",
+    };
 
-let img = PIXI.Sprite.from("src/assets/image.jpg");
-
-........
-
-let depthMap = PIXI.Sprite.from("src/assets/image-map.jpg");
 ```
-replace `image.jpg` or/and `image-map.jpg` with the your new images names.
 
+All you have to do is to provide 3 valid url's and put them here (don't forget to save).
+That is all! you are now ready, double click from the folder manager on the index.html file.
+Enjoy!
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.

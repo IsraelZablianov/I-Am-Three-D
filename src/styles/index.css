@@ -1,7 +1,0 @@
-canvas, img {
-    position: absolute;
-}
-
-img {
-    z-index: 2;
-}

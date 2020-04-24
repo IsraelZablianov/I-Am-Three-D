@@ -4,10 +4,6 @@
   "description": "Create a beautiful 3D image using image and depth map",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"some day, but not today\" && exit 1",
-    "server": "node ./server.js",
-    "dev": "webpack-dev-server",
-    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -27,11 +23,7 @@
   },
   "homepage": "https://github.com/IsraelZablianov/I-Am-Three-D#readme",
   "dependencies": {
-    "pixi.js": "^5.2.2"
   },
   "devDependencies": {
-    "express": "^4.17.1",
-    "webpack": "^3.11.0",
-    "webpack-dev-server": "^2.9.7"
   }
 }
